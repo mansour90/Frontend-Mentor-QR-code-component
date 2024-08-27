@@ -70,4 +70,5 @@ p {
   text-align: center;
   color: var(--Slate-500);
   font-size: var(--fs-15);
+  padding-inline: 15px;
 }
