@@ -1,0 +1,72 @@
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/outfit-v11-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/outfit-v11-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  /* Colors */
+  --White: #ffffff;
+  --Slate-300: #d6e2f0;
+  --Slate-500: #68778d;
+  --Slate-900: #1f3251;
+  /* Font Weight */
+  --fw-400: 400;
+  --fw-700: 700;
+  /* Typography */
+  --fs-22: 2.2rem;
+  --fs-15: 1.5rem;
+  /* Spacing */
+  --l-sp: 1px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  padding: 2rem;
+  background-color: var(--Slate-300);
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  width: 100%;
+  padding: 1.5rem;
+  padding-block-end: 40px;
+  background-color: var(--White);
+  border-radius: 20px;
+  max-width: 320px;
+}
+
+.card--qrcode-container {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.card-main-content {
+  padding-inline: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: var(--fs-22);
+  color: var(--Slate-900);
+  margin-bottom: 16px;
+}
+
+p {
+  text-align: center;
+  color: var(--Slate-500);
+  font-size: var(--fs-15);
+}
